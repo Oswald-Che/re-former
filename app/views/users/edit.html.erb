@@ -1,6 +1,6 @@
 <%= form_with model: @user do |form| %>
   <div>
-    <%=@user.errors.full_messages.each do |error| %>
+    <%@user.errors.full_messages.each do |error| %>
       <li><%=error %></li>
     <%end%>
   </div>
